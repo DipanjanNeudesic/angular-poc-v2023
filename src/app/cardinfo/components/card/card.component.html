@@ -1,0 +1,19 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{repoinfo.name}}</mat-card-title>
+      <mat-card-subtitle>{{repoinfo.owner?.login}}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        [src]="repoinfo.owner?.avatar_url"
+        alt="Image of author"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{repoinfo.description}}
+    <br>
+    <br>
+    <a [href]="repoinfo.html_url"> Learn More</a>
+  </mat-card-content>
+</mat-card>

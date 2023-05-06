@@ -1,0 +1,6 @@
+<mat-toolbar color="primary">
+  <mat-form-field appearance="fill" color="blue" width="100%">
+    <input matInput [(ngModel)]="searchTerm" (keyup.enter)="handlechange()"/>
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field>
+</mat-toolbar>
